@@ -7,14 +7,15 @@
         <th>Launch Date</th>
     </tr>
     <tr class="data-row">
-        <td>GPS 938</td>
+        <td>{{ satellites[0].name }}</td>
         <td>Positioning</td>
-        <td>true</td>
-        <td>HIGH</td>
-        <td>2001-11-01</td>
+        <td>{{ satellites[0].operational }}</td>
+        <td>{{ satellites[0].orbitType }}</td>
+        <td>{{ satellites[0].launchDate }}</td>
     </tr>
 </table>
 
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
+
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 
