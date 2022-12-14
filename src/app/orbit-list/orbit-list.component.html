@@ -7,7 +7,7 @@
         <th>Launch Date</th>
     </tr>
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
-    <tr *ngFor = "let satellite of satellites">
+    <tr *ngFor = "let satellite of satellites" class="data-row">
         <td>{{ satellite.name }}</td>
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
         <td *ngIf = "satellite.isSpaceDebris(); else notSpaceDebris" class="warning">{{ satellite.type }}</td>
