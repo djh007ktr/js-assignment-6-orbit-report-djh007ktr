@@ -27,3 +27,6 @@ th, td {
 	padding: 6px;
 }
 
+tr:nth-of-type(2n) {
+	background-color: lightgreen;
+}
